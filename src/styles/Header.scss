@@ -1,0 +1,19 @@
+@import './colors.scss';
+
+.header{
+    .menu{
+        display:none;
+    }
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar a{
+
+        // margin-left: 4%;
+    }
+
+    .navbar a:hover{
+        color:$Soft-orange;
+    }
+}
