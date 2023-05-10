@@ -1,11 +1,132 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import './styles/Header.scss';
+@import './styles/colors.scss';
 
+
+
+html,
+body {
+  margin: 0px;
+  // height: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  // text-align: center;
+}
+#root {
+  
+  padding: 0px 7rem ;
+  height:100%;
+}
+
+.main{
+
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  'Header Header Header'
+  'main main new'
+  'main main new'
+  'main main new'
+  'bottom bottom bottom';
+  grid-gap:2%;
+
+
+
+  .header{
+    grid-area: Header;
   }
+
+  .MainNews{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'img img'
+    'title desc';
+    grid-gap:1%;
+    max-width: 100%;
+    max-height: 100%;
+
+    .news-img{
+      grid-area: img;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .news-title{
+      font-weight: bolder;
+      padding:1%;
+      grid-area: title;
+      color:$Very-dark-blue;
+    }
+
+    .news-desc{
+      padding:1%;
+      grid-area: desc;
+      color:$Dark-grayish-blue
+
+    }
+
+    
+  }
+
+  .NewSection{
+    grid-area: new;
+    background-color: $Very-dark-blue;
+    padding: 4%;
+    .new-title{
+      padding:0;
+      margin:0
+    }
+    h1{
+      color:$Soft-orange;
+    }
+    
+    h3, p{
+      color: $Off-white;
+    } 
+
+    .NewArticle{
+      border-bottom: 1px $Off-white solid;
+      padding:1%;
+    }
+  }
+
+  .BottomSection{
+    grid-area: bottom;
+    display: flex;
+    flex-direction: row;
+
+    
+    
+  }
+
+
+}
+.readmore{
+  border-radius: 0;
+  background-color: $Soft-red;
+  color:$Off-white;
+  padding:2% 6%;
+}
+
+
+nav a{
+  color: $Dark-grayish-blue;
+  font-weight: lighter;
+}
   
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-  
+@media(max-width:376px) {
+  .header{
+    .navbar{
+      display:none;
+    }
+    .menu{
+      display: inline-block;
+    }
+  }
+}
