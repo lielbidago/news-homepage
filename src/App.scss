@@ -12,6 +12,13 @@ body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  a{
+    text-decoration: none;
+  }
+
+  button{
+    border:0;
+  }
 }
 #root {
   height:100%;
