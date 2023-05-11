@@ -1,0 +1,48 @@
+.NavBarOffCanvas-background{
+
+    height:100dvh;
+    width:100dvw;
+    background-color: rgba(0, 0, 0, 0.356);
+    position:fixed;
+    top:0;
+    right:0;
+        
+}
+
+
+.NavBarOffCanvas{
+    height:100dvh;
+    background-color: white;
+    width:80%;
+    position:fixed;
+    top:0;
+    right:0;
+    display:flex;
+    flex-direction: column;
+    line-height:1;
+
+    .close{
+        font-family: system-ui;
+        font-size: 4em;
+        font-weight: 100;
+        cursor: pointer;
+        align-self: flex-end;
+        display: inline-block;
+        margin:0 5%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        a{
+            color:$Dark-grayish-blue;
+            padding:5%;
+        }
+
+        a:hover{
+            color:$Soft-orange;
+        }
+       
+    }
+
+}

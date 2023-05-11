@@ -1,0 +1,41 @@
+.NewSection{
+    grid-area: new;
+    background-color: $Very-dark-blue;
+    padding: 2%;
+    .new-title{
+      padding:0;
+      margin:4%;
+    }
+
+    h1{
+      color:$Soft-orange;
+    }
+
+    .NewArticle{
+      
+      border-bottom: 0.5px $Grayish-blue solid;
+      margin:4%;
+      padding:2%;
+      
+      .desc{
+        font-weight: 400;
+        color:$Grayish-blue;
+      }
+      
+      .title{
+        color:$Off-white;
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+
+      .title:hover{
+        color:$Soft-orange;
+      }
+    }
+
+    .NewArticle:last-child{
+      border-bottom: none;
+    }
+
+  }

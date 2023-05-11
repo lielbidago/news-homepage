@@ -1,0 +1,10 @@
+@import './BottomSectionArticle.scss';
+
+.BottomSection{
+    grid-area: bottom;
+    display: flex;
+    flex-direction: row;
+    margin-top:5%;
+    row-gap: 10%;
+    
+}

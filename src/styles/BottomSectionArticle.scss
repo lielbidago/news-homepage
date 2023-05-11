@@ -1,0 +1,56 @@
+
+.BottomSectionArticle{
+    display:grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'pic number'
+    'pic title'
+    'pic desc';
+    cursor: pointer;
+    padding:0;
+    column-gap: 5%;
+    
+
+    .number{
+      grid-area: number;
+      color: $Grayish-blue;
+      font-size: 2em;
+      font-weight: bold;
+      margin:0;
+      padding:0;
+      line-height:80%;
+      
+    }
+  
+    .title{
+      grid-area: title;
+      font-weight: bold;
+      // font-size: 1.2em;
+      color: $Very-dark-blue;
+      margin:0;
+  
+      &:hover{
+        color:$Soft-red;
+      }
+  
+    }
+    .desc{
+      grid-area: desc;
+      color:$Dark-grayish-blue;
+      margin:0;
+    }
+    .img{
+      grid-area: pic;
+
+      img{
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      object-position: center;
+      // height: auto;
+    }
+    }
+
+  }
