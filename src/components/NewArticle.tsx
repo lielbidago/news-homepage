@@ -5,8 +5,8 @@ import { INewArticle } from "../App";
 export function NewArticle({title,desc,id }:INewArticle){
     return (
         <div className="NewArticle" key={id}>
-            <h3>{title}</h3>
-            <p>{desc}</p>
+            <a className="title" href=''>{title}</a>
+            <p className="desc">{desc}</p>
         </div>
     )
 }

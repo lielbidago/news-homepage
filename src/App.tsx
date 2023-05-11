@@ -50,7 +50,7 @@ function App() {
 </div>
     <div className="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.linkedin.com/in/liel-bidago/">Liel bidago</a>.
     </div>
     </>
   )
